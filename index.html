@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rubel Telecom</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      color: #172033;
-    }
-    header {
-      background: #0756c9;
-      color: white;
-      padding: 28px 16px;
-      text-align: center;
-    }
-    .card {
-      background: white;
-      margin: 18px;
-      padding: 20px;
-      border-radius: 14px;
-      box-shadow: 0 3px 12px #0001;
-    }
-    .btn {
-      display: block;
-      box-sizing: border-box;
-      width: 100%;
-      padding: 14px;
-      margin-top: 12px;
-      border-radius: 8px;
-      background: #0756c9;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      font-size: 16px;
-    }
-    .green { background: #12834b; }
-    p { line-height: 1.6; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0756c9">
+<title>Rubel Telecom</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#172033;line-height:1.6}
+header{background:linear-gradient(135deg,#073b91,#0879e8);color:#fff;text-align:center;padding:30px 18px}
+header h1{margin:0;font-size:30px}header p{margin:8px 0 0}
+main{max-width:620px;margin:18px auto;padding:0 12px}.card{background:#fff;margin:14px 0;padding:20px;border-radius:14px;box-shadow:0 3px 12px #0001}
+h2{margin:0 0 8px;color:#0756c9;font-size:21px}.btn{display:block;width:100%;padding:15px;margin-top:12px;border-radius:9px;background:#0756c9;color:#fff;text-decoration:none;text-align:center;font-weight:bold}
+.green{background:#12834b}.muted{font-size:14px;color:#5b6575}footer{text-align:center;color:#687386;padding:18px;font-size:13px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Rubel Telecom</h1>
-    <p>কাস্টমার ম্যানেজমেন্ট অ্যাপ</p>
-  </header>
-
-  <div class="card">
-    <h2>স্বাগতম!</h2>
-    <p>এখান থেকে নতুন কাস্টমারের নাম, ফোন নম্বর ও ছবি জমা দেওয়ার ফর্ম খুলতে পারবে।</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfNmi-5SnK8kZ7B-HpMy6FZbVo7U9jsF6LB-QlFnpQelGd4-A/viewform?usp=sharing&ouid=110164777443234333226" target="_blank">
-      ➕ নতুন কাস্টমার যোগ করুন
-    </a>
-    <p>কাস্টমারের তথ্য Google Form-এ জমা হবে। এই পেজ নিজে থেকে তথ্য সংরক্ষণ করে না।</p>
-  </div>
-
-  <div class="card">
-    <h3>কাস্টমারের তথ্য</h3>
-    <p>তথ্য দেখতে Google Sheets-এর ব্যক্তিগত লিংক আলাদাভাবে যোগ করতে হবে।</p>
-  </div>
+<header><h1>Rubel Telecom</h1><p>আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র</p></header>
+<main>
+<section class="card">
+<h2>কাস্টমারের ছবি ও তথ্য জমা দিন</h2>
+<p>নিচের বোতামে চাপ দিয়ে কাস্টমারের নাম, মোবাইল নম্বর ও ছবি জমা দিন। ফর্মটি আলাদা পেজে খুলবে।</p>
+<a class="btn green" href="https://docs.google.com/forms/d/e/1FAIpQLSfNmi5-5SnK8kZ7B-HpMy6FZbVo7U9jsF6LB-QlFnpQelGd4-A/viewform?usp=sharing&ouid=110164777443234333226" target="_blank" rel="noopener">📷 কাস্টমারের তথ্য জমা দিন</a>
+<p class="muted">জমা দেওয়ার পর ফর্মে সফলভাবে জমা হয়েছে—এমন বার্তা না দেখা পর্যন্ত কাজ সম্পন্ন হয়েছে ধরে নেবেন না।</p>
+</section>
+<section class="card">
+<h2>আমাদের সেবাসমূহ</h2>
+<p>📄 ফটোকপি ও প্রিন্টিং<br>📷 ছবি ও ডকুমেন্ট সেবা<br>📱 মোবাইল সার্ভিসিং<br>📶 SIM-সংক্রান্ত সেবা<br>🛠️ অন্যান্য জরুরি সেবা</p>
+</section>
+<section class="card">
+<h2>যোগাযোগ</h2>
+<p>📍 নন্দিনা খন্দকার বাজার, গাইবান্ধা সদর, গাইবান্ধা<br>📞 01784904304</p>
+<a class="btn" href="tel:01784904304">📞 কল করুন</a>
+<a class="btn green" href="https://wa.me/8801784904304" target="_blank" rel="noopener">WhatsApp করুন</a>
+</section>
+</main>
+<footer>© Rubel Telecom</footer>
 </body>
 </html>
