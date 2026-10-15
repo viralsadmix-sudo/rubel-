@@ -118,6 +118,7 @@
     statusMsg.style.color = "#0756c9";
     statusMsg.innerText = "ছবি ও তথ্য জমা হচ্ছে—অপেক্ষা করুন...";
     let uploadedFileId = null;
+    let uploadStage = "ছবি Storage-এ আপলোড";
     try {
       const { Client, Storage, TablesDB, ID } = Appwrite;
       const client = new Client().setEndpoint(CONFIG.endpoint).setProject(CONFIG.projectId);
@@ -131,6 +132,7 @@
       });
       uploadedFileId = uploaded.$id;
 
+      uploadStage = "কাস্টমারের তথ্য Table-এ সংরক্ষণ";
       await tablesDB.createRow({
         databaseId: CONFIG.databaseId,
         tableId: CONFIG.tableId,
@@ -149,7 +151,7 @@
       console.error(error);
       statusMsg.style.color = "red";
       const code = error && error.code ? " (কোড " + error.code + ")" : "";
-      statusMsg.innerText = "জমা হয়নি" + code + ": " + (error && error.message ? error.message : "Appwrite-এর অনুমতি/টেবিল/স্টোরেজ সেটিং পরীক্ষা করতে হবে।");
+      statusMsg.innerText = uploadStage + " ধাপে ব্যর্থ হয়েছে" + code + ": " + (error && error.message ? error.message : "Appwrite সংযোগ/অনুমতি পরীক্ষা করতে হবে।");
     } finally {
       submitBtn.disabled = false;
     }
