@@ -3,37 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0756c9">
+<meta name="theme-color" content="#081a3a">
+<meta name="description" content="Rubel Telecom — কাস্টমার তথ্য, ছবি জমা, দোকানের সেবা ও অ্যাপ ডাউনলোড">
 <title>Rubel Telecom</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#172033;line-height:1.6}
-header{background:linear-gradient(135deg,#073b91,#0879e8);color:#fff;text-align:center;padding:30px 18px}
-header h1{margin:0;font-size:30px}header p{margin:8px 0 0}
-main{max-width:620px;margin:18px auto;padding:0 12px}.card{background:#fff;margin:14px 0;padding:20px;border-radius:14px;box-shadow:0 3px 12px #0001}
-h2{margin:0 0 8px;color:#0756c9;font-size:21px}.btn{display:block;width:100%;padding:15px;margin-top:12px;border-radius:9px;background:#0756c9;color:#fff;text-decoration:none;text-align:center;font-weight:bold}
-.green{background:#12834b}.muted{font-size:14px;color:#5b6575}footer{text-align:center;color:#687386;padding:18px;font-size:13px}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(145deg,#061020,#102b59,#071225);color:#f5f8ff;line-height:1.65}
+header{text-align:center;padding:28px 16px 22px}.logo{width:82px;height:82px;margin:0 auto 12px;border-radius:24px;background:linear-gradient(135deg,#1685ff,#6847ff);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;box-shadow:0 8px 24px #1685ff55}h1{margin:0;font-size:29px}header p{color:#c4d7f6;margin:6px 0}
+main{max-width:640px;margin:auto;padding:0 13px 20px}.card{padding:20px;margin:14px 0;border:1px solid #294d80;border-radius:17px;background:#0a1930;box-shadow:0 8px 25px #0003}h2{margin:0 0 9px;color:#7bbcff;font-size:20px}p,li{color:#e0eaff}.btn{display:block;width:100%;padding:13px 15px;margin-top:11px;border:0;border-radius:11px;background:linear-gradient(90deg,#147dff,#624cff);color:#fff;text-align:center;text-decoration:none;font-weight:700;font-size:15px;cursor:pointer}.green{background:linear-gradient(90deg,#07884b,#19b765)}.muted{font-size:13px;color:#aebfdb}.field{display:block;width:100%;margin:8px 0 13px;padding:13px;border:1px solid #42618a;border-radius:9px;background:#071225;color:#fff;font-size:15px}.label{display:block;font-weight:700;color:#e0eaff;margin-top:8px}footer{text-align:center;color:#9aacc8;padding:18px;font-size:13px}
 </style>
 </head>
 <body>
-<header><h1>Rubel Telecom</h1><p>আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র</p></header>
+<header><div class="logo" aria-label="Rubel Telecom logo">RT</div><h1>Rubel Telecom</h1><p>আপনাদের বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র</p></header>
 <main>
-<section class="card">
-<h2>কাস্টমারের ছবি ও তথ্য জমা দিন</h2>
-<p>নিচের বোতামে চাপ দিয়ে কাস্টমারের নাম, মোবাইল নম্বর ও ছবি জমা দিন। ফর্মটি আলাদা পেজে খুলবে।</p>
-<a class="btn green" href="https://docs.google.com/forms/d/e/1FAIpQLSfNmi5-5SnK8kZ7B-HpMy6FZbVo7U9jsF6LB-QlFnpQelGd4-A/viewform?usp=sharing&ouid=110164777443234333226" target="_blank" rel="noopener">📷 কাস্টমারের তথ্য জমা দিন</a>
-<p class="muted">জমা দেওয়ার পর ফর্মে সফলভাবে জমা হয়েছে—এমন বার্তা না দেখা পর্যন্ত কাজ সম্পন্ন হয়েছে ধরে নেবেন না।</p>
-</section>
-<section class="card">
-<h2>আমাদের সেবাসমূহ</h2>
-<p>📄 ফটোকপি ও প্রিন্টিং<br>📷 ছবি ও ডকুমেন্ট সেবা<br>📱 মোবাইল সার্ভিসিং<br>📶 SIM-সংক্রান্ত সেবা<br>🛠️ অন্যান্য জরুরি সেবা</p>
-</section>
-<section class="card">
-<h2>যোগাযোগ</h2>
-<p>📍 নন্দিনা খন্দকার বাজার, গাইবান্ধা সদর, গাইবান্ধা<br>📞 01784904304</p>
-<a class="btn" href="tel:01784904304">📞 কল করুন</a>
-<a class="btn green" href="https://wa.me/8801784904304" target="_blank" rel="noopener">WhatsApp করুন</a>
-</section>
-</main>
-<footer>© Rubel Telecom</footer>
-</body>
-</html>
+<section class="card"><h2>📷 কাস্টমারের নাম, নম্বর ও ছবি জমা দিন</h2>
+<p>কাস্টমারের তথ্য লিখুন এবং ছবি নির্বাচন করুন।</p>
+<form id="customerForm">
+<label class="label" for="customerName">কাস্টমারের নাম</label><input class="field" id="customerName" type="text" placeholder="নাম লিখুন" required>
+<label class="label" for="customerPhone">মোবাইল নম্বর</label><input class="field" id="customerPhone" type="tel" inputmode="tel" placeholder="01XXXXXXXXX" required>
+<label class="label" for="customerPhoto">ছবি নির্বাচন করুন</label><input class="field" id="customerPhoto" type="file" accept="image/*" required>
+<button class="btn green" type="submit">📤 তথ্য ও ছবি জমা দিন</button>
+<p class="muted" id="formStatus">নোট: ছবি ও তথ্য অনলাইনে সংরক্ষণের সংযোগ এখনো ঠিক করতে হবে। সংযোগ ঠিক না হওয়া পর্যন্ত এই ফর্ম জমা হয়েছে বলে দেখাবে না।</p>
+</form></section>
+<section class="card"><h2>🛠️ আমাদের সেবাসমূহ</h2><p>📄 ফটোকপি ও প্রিন্টিং<br>📷 ছবি ও ডকুমেন্ট সেবা<br>📱 মোবাইল সার্ভিসিং<br>📶 SIM-সংক্রান্ত সেবা<br>🧰 অন্যান্য জরুরি সেবা</p></section>
+<section class="card"><h2>📲 Rubel Telecom অ্যাপ</h2><p>Android অ্যাপের সর্বশেষ APK ডাউনলোড করতে নিচের বোতামে চাপ দিন।</p><a class="btn" href="https://github.com/viralsadmix-sudo/rubel-telecom-/releases/latest" target="_blank" rel="noopener">⬇️ Android APK ডাউনলোড</a></section>
+<section class="card"><h2>👨‍💻 অ্যাপ ডেভেলপার</h2><p><strong>Sabbir Ahmed Rubel</strong><br>Rubel Telecom অ্যাপ ও ডিজিটাল সেবা</p></section>
+<section class="card"><h2>🔐 অ্যাডমিন প্যানেল</h2><p>কাস্টমারের জমা দেওয়া তথ্য ও ছবি দেখার জন্য অ্যাডমিন প্যানেল প্রস্তুত/সংযুক্ত করা বাকি আছে।</p><a class="btn" href="https://github.com/viralsadmix-sudo/rubel-telecom-" target="_blank" rel="noopener">অ্যাডমিন সেটআপ দেখুন</a></section>
+<section class="card"><h2>📞 যোগাযোগ</h2><p>📍 নন্দিনা খন্দকার বাজার, গাইবান্ধা সদর, গাইবান্ধা<br>📱 01784904304</p><a class="btn" href="tel:01784904304">📞 কল করুন</a><a class="btn green" href="https://wa.me/8801784904304" target="_blank" rel="noopener">💬 WhatsApp করুন</a></section>
+</main><footer>© 2026 Rubel Telecom — সর্বস্বত্ব সংরক্ষিত</footer>
+<script>
+document.getElementById('customerForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('formStatus').textContent='তথ্য/ছবি এখনো জমা হয়নি। অনলাইন স্টোরেজ সংযোগ সক্রিয় না থাকায় আগে ব্যাকএন্ড সেটআপ করতে হবে।';document.getElementById('formStatus').style.color='#ffd38a';});
+</script>
+</body></html>
