@@ -138,6 +138,7 @@
         tableId: CONFIG.tableId,
         rowId: ID.unique(),
         data: {
+          title: ("Customer submission - " + name).slice(0, 255),
           product_name: ("Customer submission - " + name).slice(0, 255),
           customer_name: name,
           phone: phone,
